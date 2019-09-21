@@ -1,0 +1,73 @@
+Return-Path: <0100016afa4ede12-899bc89a-3f59-48d6-afeb-811074536e05-000000@amazonses.com>
+Received: from a37-164.smtp-out.amazonses.com (a37-164.smtp-out.amazonses.com [54.240.37.164])
+ by inbound-smtp.us-east-1.amazonaws.com with SMTP id 00001tni3lor85m25jnhodkif6cctepupq0h6b81
+ for customeremailed@ams-archive.com;
+ Mon, 27 May 2019 17:20:34 +0000 (UTC)
+Received-SPF: pass (spfCheck: domain of amazonses.com designates 54.240.37.164 as permitted sender) client-ip=54.240.37.164; envelope-from=0100016afa4ede12-899bc89a-3f59-48d6-afeb-811074536e05-000000@amazonses.com; helo=a37-164.smtp-out.amazonses.com;
+Authentication-Results: amazonses.com;
+ spf=pass (spfCheck: domain of amazonses.com designates 54.240.37.164 as permitted sender) client-ip=54.240.37.164; envelope-from=0100016afa4ede12-899bc89a-3f59-48d6-afeb-811074536e05-000000@amazonses.com; helo=a37-164.smtp-out.amazonses.com;
+ dkim=pass header.i=@allmysons.com;
+ dkim=pass header.i=@amazonses.com;
+ dmarc=none header.from=allmysons.com;
+X-SES-RECEIPT: AEFBQUFBQUFBQUFGdGFubDNQam1ld3ZLbXloZis1LzRQdGxlKzZmVXlCY3VyeWx0MjBRV2pEakRCRXJGZ2xLeTEwMWJ2WWdaYlh2UmZ0eUZNaDkzS1RhK2tCQVhkeDQ4TVVUc0FvQmNFQ2lXeU83UWc0MUtSODJkNWFFTGswUzE2RldJNHBFZDFlaTIyeXIyQXpOYjlKZjBXcld4bzMvTzNnVVFnWW9hOTNIS3VIaVBsS0JPUmpiRHFmc2Y3Q0x1VW5TUWwzb2wvMlpvcU40VWVHdGIzYjdHMHJxRFdjbi9WUzJEQi9MeVBZVTcwQ0VGSVV5Vkc5cDZVSHZPL0YvVFJwN29sbjd5bjZ5Ym5KZXJIV21kZlNqNnMxSFZpQlVMT0VKNG5ObmtnbWY4QmtPN013bkdYRVYwMExpVXNORDM3WHlhS2NranV4NytVWk1BaTNkTUFNK3RhSGNvUDFqTTdrYXlmdENXcFhEb2RuRTgrZHlOQldkMFpSOVZDeXFOVnowdWRrcEVsTWZNPQ==
+X-SES-DKIM-SIGNATURE: a=rsa-sha256; q=dns/txt; b=KdPXAxCQ37rmUQbRx8A90TYA0gUbdrPIjIUrlt9EOjvRX/lTpWo6NggFtSHZVHUhwGUSO9F2lxAI9WhHesqTxhHZvcJLBEG+3L7JrRO6mSl2LmaBNPFsOm4MZqqvMJPDefW2Lz9tV/urH0IffMSB5zVIdGNznqzgw/Ju+aU17ng=; c=relaxed/simple; s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1558977634; v=1; bh=6xhAmEQwETNusMzuPEcevLl1SyhITMaC5lJbPvwunfs=; h=From:To:Cc:Bcc:Subject:Date:Message-ID:MIME-Version:Content-Type:X-SES-RECEIPT;
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=ablibg2swgncd6ijb4tuet2jwzwwrznz; d=allmysons.com; t=1558977633;
+	h=MIME-Version:From:To:Reply-To:Date:Subject:Content-Type:Content-Transfer-Encoding:Message-ID;
+	bh=6xhAmEQwETNusMzuPEcevLl1SyhITMaC5lJbPvwunfs=;
+	b=ZMpCvIDah/M2AdPX+tPWyVnPWoaz95MMqhD0Z//Y07kjpcPpqDbmy7ViVnxQ4TOV
+	iu3dJeVfG7pBYnK4ms2sXReZPGmkkhV4wazIodFQw8TgICa4i1HPDeTo4iaSZDF5bQG
+	oAZ8cqMtwUvF4OX0bQ0cPQuHtkB1j1mMjfS8cVFQ=
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/simple;
+	s=6gbrjpgwjskckoa6a5zn6fwqkn67xbtw; d=amazonses.com; t=1558977633;
+	h=MIME-Version:From:To:Reply-To:Date:Subject:Content-Type:Content-Transfer-Encoding:Message-ID:Feedback-ID;
+	bh=6xhAmEQwETNusMzuPEcevLl1SyhITMaC5lJbPvwunfs=;
+	b=cpUbxlZiy3wQSTa7z3TQCcRQNoFBps7fQCHMqfBu2iVhHhg/V3I8vCYLFRfkxNjJ
+	taU/4dVd+kOvSH05H+IN3Xx39wM3sMPvWbGnG3LDkS0oeBWU3kyZWEC8y8aV3Z+BnZT
+	98sZ67Axx012+aAIhh0/0UmfIOr9OWkrfLDrYXrY=
+MIME-Version: 1.0
+From: YourFriend <yourfriend@allmysons.com>
+To: venkatesh@allmysons.com
+Reply-To: venkatesh@allmysons.com
+Date: Mon, 27 May 2019 17:20:33 +0000
+Subject: You are Scheduled!
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Message-ID: <0100016afa4ede12-899bc89a-3f59-48d6-afeb-811074536e05-000000@email.amazonses.com>
+X-SES-Outgoing: 2019.05.27-54.240.37.164
+Feedback-ID: 1.us-east-1.rG+oq7e+a/7S6gRRQvRURBjy4HLjegztZsj0n9VySZ8=:AmazonSES
+
+<html><head><title>All my Sons</title></head><center><img src=3D"https://cms.allmysons.com/images/AMS_Logo.gif"></center><br=
+ /><center><b><font face=3D"arial">Columbus</b></font></center><P align=3Dcenter>LET=
+ OUR FAMILY MOVE YOURS!<br />www.allmysons.com</P><center><b><font face=3D"arial"=
+ bold=3D"true">Contact us at &nbsp;</b></font>614-336-3280</center><br /><center>Your=
+ Account #&nbsp;6547368</center><body><span style=3D"font-size: 14pt; font-family:=
+ Arial">Dear test</span><br /><span style=3D"font-size: 12pt; font-family:=
+ arial, sans-serif;"><strong><em>=0D=0A<p style=3D"text-align: center;"><span=
+ style=3D"font-size: 11pt; font-family: arial;"><span style=3D"font-size:=
+ 18px; text-decoration: underline;">Thank You</span>&nbsp;for entrusting=
+ me and&nbsp;the entire All My Sons Family with your&nbsp;upcoming move.&nbsp;We=
+ will call you prior to your move to go through any last minute needs<strong>.<br=
+ />=0D=0A</strong><span style=3D"font-size: 16px;"><br />=0D=0A<strong>Time=
+ to Relax! We've got this, it's what we do..</strong></span><br />=0D=0A<strong>I=
+ promise to make the THE BEST MOVING EXPERIENCE, PERIOD!<br />=0D=0A</strong></span></p>=
+=0D=0A<p style=3D"text-align: center; margin: 0in 0in 0pt;">&nbsp;</p>=0D=0A<p>&nbsp;</p>=
+=0D=0A<p style=3D"text-align: center; margin: 0in 0in 0pt;"><span style=3D"font-size:=
+ 11pt; font-family: arial;"><br />=0D=0A</span>&nbsp;<br />=0D=0A&nbsp;<strong>=
+ Just let me know if we can help in any additional way?</strong><br />=0D=0A<strong><span=
+ style=3D"font-size: 18px; font-family: arial;"><span class=3D"ClickablePhoneNumber"=
+ phonenumber=3D"210-899-6338">614-336-3280</span><br />=0D=0A</span></strong><strong><span=
+ style=3D"font-size: 16px; font-family: &quot;monotype corsiva&quot;;">Your=
+ Friends In The Moving Business</span></strong></p>=0D=0A<p>&nbsp;</p>=0D=0A<strong><em><strong>=
+=0D=0A<p style=3D"text-align: center; margin: 0in 0in 0pt;"><span style=3D"font-size:=
+ 12px; text-decoration: underline; font-family: arial;">All My Sons Moving=
+ &amp; Storage of Columbus, Inc.&nbsp;&nbsp;</span>&nbsp; </p>=0D=0A<p>&nbsp;=
+ </p>=0D=0A</strong></em>&nbsp; </strong>=0D=0A<p style=3D"text-align: center;=
+ margin: 0in 0in 8pt;"><strong><span style=3D"font-family: arial, sans-serif;">US=
+ DOT #2091186 MC #752711 PUCO #506025</span></strong></p>=0D=0A</em></strong></span><br=
+ />You are receiving this email because you recently requested a quote from=
+ All My Sons Moving & Storage . If you no longer want to receive emails=
+ from All My Sons Moving & Storage please <a href=3Dhttp://movinginfo.com/unsub/default.aspx?SecureToken=3Da376c752-1df0-4e5f-b3aa-2415d4ac770d&CustomerID=3D6547368>click=
+ here</a><br /><center><img src=3Dhttp://utmcontact.allmysons.com/Campaign.aspx?custID=3D6547368&campID=3D2277&Type=3DNonConfirmation=
+ /></center></body></html><span style=3D"font-size: 1pt;">[CID]6547368[/CID][RTO]moveinfo@allmysons.com[/RTO]</span>
+
